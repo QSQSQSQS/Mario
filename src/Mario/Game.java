@@ -12,11 +12,12 @@ import Entity.Player;
 import Input.KeyInput;
 import Mario.Handler;
 import Mario.Id;
+import Tile.Wall;
 
 public class Game extends Canvas implements Runnable{
 
 	public static final int WIDTH = 270;
-	public static final int HEIGHT = WIDTH/14*10;
+	public static final int HEIGHT = WIDTH/14*9;
 	public static final int SCALE = 4;
 	public static final String TITLE = "Mario";
 	
@@ -123,5 +124,7 @@ public class Game extends Canvas implements Runnable{
 		frame.setVisible(true);
 		game.start();
 	}
+	
+}
 	
 }

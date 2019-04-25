@@ -1,7 +1,7 @@
 package Tile;
 
 import java.awt.Graphics;
-
+import java.awt.Rectangle;
 
 import Mario.Handler;
 import Mario.Id;
@@ -63,5 +63,9 @@ public abstract class Tile {
 
 	public void setVelY(int velY) {
 		this.velY = velY;
+	}
+	
+	public Rectangle getBounds() {
+		return new Rectangle(getX(),getY(),width,height); 
 	}
 }
